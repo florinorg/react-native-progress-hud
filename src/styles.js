@@ -31,7 +31,6 @@ var styles = StyleSheet.create({
     width: 42,
     height: 42,
     borderRadius: 42 / 2,
-    backgroundColor: '#FFFFFF'
   }
 });
 

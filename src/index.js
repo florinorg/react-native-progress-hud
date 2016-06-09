@@ -123,6 +123,7 @@ var ProgressHUD = React.createClass({
   },
 
   render() {
+    console.log('hoi');
     // Return early if not visible
     if (!this.props.isVisible) {
       return <View />;
@@ -162,7 +163,9 @@ var ProgressHUD = React.createClass({
               isStatic: true,
             }}
           >
-            <View style={styles.inner_spinner}>
+            <View style={[styles.inner_spinner, {
+              backgroundColor: this.props.backgroundColor,
+            }]}>
             </View>
           </Image>
         </View>
