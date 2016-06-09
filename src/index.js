@@ -82,6 +82,7 @@ var ProgressHUD = React.createClass({
   getDefaultProps() {
     return {
       isDismissible: false,
+      backgroundColor: 'white',
       color: '#000',
       overlayColor: 'rgba(0, 0, 0, 0)'
     };
@@ -145,6 +146,7 @@ var ProgressHUD = React.createClass({
       >
         <View
           style={[styles.container, {
+            backgroundColor: this.props.backgroundColor,
             left: this.getTweeningValue('left'),
           }]}
         >
