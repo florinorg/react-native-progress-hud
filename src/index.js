@@ -123,7 +123,6 @@ var ProgressHUD = React.createClass({
   },
 
   render() {
-    console.log('hoi');
     // Return early if not visible
     if (!this.props.isVisible) {
       return <View />;
